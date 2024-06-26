@@ -61,6 +61,11 @@
   .about-link svg {
     margin-right: 0.5rem;
   }
+
+  .about-link.noclick {
+    pointer-events: none;
+  }
+
   
   @media (max-width: 768px) {
     .about-content {

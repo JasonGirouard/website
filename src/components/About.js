@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import './About.css';
 import AboutMeImage from '../images/torso_shot.png';
-import { Linkedin, FileText, PenTool } from 'lucide-react';
+import { Linkedin, FileText, PenTool, Mail } from 'lucide-react';
 
 const About = () => {
   return (
@@ -32,6 +32,11 @@ const About = () => {
             <a href="https://medium.com/@jasontgirouard" target="_blank" rel="noopener noreferrer" className="about-link">
               <PenTool size={20} />
               <span>Medium</span>
+            </a>
+
+            <a className="about-link noclick">
+              <Mail size={20} />
+              <span>JasonTGirouard [@] gmail</span>
             </a>
           </div>
         </div>

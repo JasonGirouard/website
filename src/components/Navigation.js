@@ -8,7 +8,7 @@ const Navigation = ({ onWorkClick, onAboutClick, onTestimonialsClick, onContactC
       <button onClick={onWorkClick}>Work</button>
       <button onClick={onAboutClick}>About</button>
       <button onClick={onTestimonialsClick}>Testimonials</button>
-      <button onClick={onContactClick}>Contact</button>
+      {/* <button onClick={onContactClick}>Contact</button> */}
     </nav>
   );
 };

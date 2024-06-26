@@ -11,7 +11,7 @@ const App = () => {
   const workRef = useRef(null);
   const aboutRef = useRef(null);
   const testimonialsRef = useRef(null);
-  const contactRef = useRef(null);
+  // const contactRef = useRef(null);
 
   const scrollTo = (ref) => {
     ref.current.scrollIntoView({ behavior: 'smooth' });
@@ -23,7 +23,7 @@ const App = () => {
         onWorkClick={() => scrollTo(workRef)}
         onAboutClick={() => scrollTo(aboutRef)}
         onTestimonialsClick={() => scrollTo(testimonialsRef)}
-        onContactClick={() => scrollTo(contactRef)}
+        // onContactClick={() => scrollTo(contactRef)}
       />
       <div className="container">
         <Landing />
@@ -33,8 +33,9 @@ const App = () => {
         <div ref={aboutRef}><About /></div>
         <div className="section-divider"></div>
         <div ref={testimonialsRef}><Testimonials /></div>
-        <div className="section-divider"></div>
-        <div ref={contactRef}><Contact /></div>
+        {/* <div className="section-divider"></div> */}
+        {/* <div className="section-divider"></div>
+        <div ref={contactRef}><Contact /></div> */}
         
       </div>
     </div>
