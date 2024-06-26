@@ -53,7 +53,7 @@ const Projects = () => {
         <section className="challenge">
           <h4>The challenge</h4>
           <p>Uber Freight's growth and profitability were negatively impacted as the company faced challenges maintaining high-quality service to customers under rapid expansion. Despite efforts to automate shipments, manual operations remained critical. The 1,000+ person team lacked proper tools, relying on makeshift solutions like Google Sheets, which hindered effectiveness.</p>
-          <p>A first version of new tooling, "workLoad", was hastily built with minimal product discovery which created new issues without solving the original ones. The right solution was essential for growth, especially with an upcoming acquisition that would double the size of the operations team within a year.</p>
+          <p>A first version of new tooling, "workLoad", was quickly built with minimal product discovery which created new issues without solving the original ones. The right solution was essential for growth, especially with an upcoming acquisition that would double the size of the operations team within a year.</p>
         </section>
   
         <section className="role">
@@ -177,11 +177,11 @@ const Projects = () => {
       content: (
         <>
           <section className="context">
-            <p>Uber Freight's B2B Managed Transportation business helps enterprise companies like Kellogg's plan and ship goods efficiently via SaaS through the Transportation Management System (TMS). After the Transplace Acquisition closed in 2022, this $500M/yr business became the top tech priority.</p>
+            <p1>Uber Freight's B2B Managed Transportation business helps enterprise companies like Kellogg's plan and ship goods efficiently via SaaS through the Transportation Management System (TMS). After the Transplace Acquisition closed in 2022, this $500M/yr business became the top tech priority.</p1>
           </section>
     
           <section className="challenge">
-            <h3>The challenge</h3>
+            <h4>The challenge</h4>
             <p>While leadership had growth aspirations for the Managed Transportation business, we lacked a clear "how" or "what" to achieve it. My objective became to define the user needs and develop a strategy to grow the business.</p>
             <h4>Additional headwinds included:</h4>
             <ul>
@@ -194,12 +194,12 @@ const Projects = () => {
           </section>
     
           <section className="role">
-            <h3>My Role</h3>
+            <h4>My Role</h4>
             <p>As the lead product manager, I spearheaded product discovery and problem prioritization. I was chosen due to my relevant experience from similar brokerage projects and track record of tackling the most complex, ambiguous challenges. My core team was composed of a User Researcher, a Designer, and a VP of Operations (market expert).</p>
           </section>
-    
+          <hr></hr>
           <section className="process-and-goals">
-            <h3>Process & Goals</h3>
+            <h2>Process & Goals</h2>
             <p>The first step was to align on and get feedback on the process with leadership. I created the first version of the process and goals and got feedback from group product and design managers.</p>
             <ul>
               <li><strong>Objective:</strong> Our goal was to discover and define TMS problems to shape a product vision.</li>
@@ -214,9 +214,9 @@ const Projects = () => {
             <p>After aligning on the process and goals with our working group and sponsors, it proved valuable to socialize it with stakeholders who were less familiar with modern product development principles.</p>
             <p><em>As an aside: While I simultaneously oversaw three scrum teams of 30 (mostly offshore) engineers that supported the existing application, I was able to rely on Product Operations to manage these teams. This allowed me to focus on creating value in the highest leverage way.</em></p>
           </section>
-    
+          <hr></hr>
           <section className="discovery">
-            <h3>Discovery</h3>
+            <h2>Discovery</h2>
             <p>Throughout the Discovery process we wanted to answer broad questions including the users' main jobs-to-be-done, our competitive position, problems faced by existing and new users, and the business impact of these issues.</p>
             <p>Our approach:</p>
             <ol>
@@ -249,9 +249,9 @@ const Projects = () => {
             <h4>Competitive Analysis</h4>
             <p>I collaborated with our Strategy & Planning team on competitive analysis, adapting existing material. In hindsight, I should have invested more time here, given the market's maturity and its relevance to our later-identified go-to-market strategy needs.</p>
           </section>
-    
+          <hr></hr>
           <section className="outputs">
-            <h3>Outputs</h3>
+            <h2>Outputs</h2>
             <p>With user journey maps, market analysis, and concepts in hand, we could now align on prioritized user issues, a primary business objective, and create a product vision prototype.</p>
     
             <h4>Prioritized user issues</h4>
@@ -268,7 +268,7 @@ const Projects = () => {
           </section>
     
           <section className="mvp">
-            <h3>MVP</h3>
+            <h4>MVP</h4>
             <p>The final step was to define the MVP for our Reimagined TMS. I partnered with our heads of product and design for the TMS and together we …</p>
             <ul>
               <li>Worked backwards from our vision</li>
@@ -284,9 +284,9 @@ const Projects = () => {
             <h3>Overall</h3>
             <p>After six months, we developed a clear product strategy, vision, and MVP roadmap. This aligned our team and set up successful execution. The outcome and my personal growth made the intense effort and long hours worthwhile.</p>
           </section>
-    
+          <hr></hr>
           <section className="feedback">
-            <h3>Collaboration feedback</h3>
+            <h2>Collaboration feedback</h2>
             <blockquote>
               <p>"Jason has developed strong product and user intuition. His passion for user experience shines through in his consistent advocacy and active involvement in the product design process. Leveraging data to inform decisions, he exemplifies the power of data-driven product strategy. Jason consistently delivers on time, high-quality product documentation, standing out as one of the more proficient PRD writers in our product management team. As a team leader, Jason's highly effective in driving engineering velocity, maintaining a well-curated engineering Jira backlog, and promoting continuous process improvement. In short, Jason's skill set and approach are key drivers of our team's success"</p>
               <footer>- Shawn, Director of Product Design</footer>
@@ -300,9 +300,9 @@ const Projects = () => {
               <footer>- Mike, Manager of Product Operations</footer>
             </blockquote>
           </section>
-    
+          <hr></hr>
           <section className="learnings">
-            <h3>Personal Learnings</h3>
+            <h2>Personal Learnings</h2>
             <ul>
               <li><strong>Product Vision Prototype:</strong> I found this to be our most shared and impactful artifact, especially with voiceovers, for aligning teams and stakeholders.</li>
               <li><strong>Customer Problem Stack Rank:</strong> This forced prioritization revealed true user issues, confirming Danny Kahneman's insight that "Nothing in life is as important as you think it is, while you are thinking about it."</li>
