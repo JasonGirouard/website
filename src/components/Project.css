@@ -113,3 +113,7 @@
   .view-case-study-button:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+
+  .projects h2 {
+   padding: 1rem;
+   }

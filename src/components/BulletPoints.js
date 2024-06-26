@@ -1,10 +1,10 @@
 import React from 'react';
-import { MapPin, Briefcase, Database, Code, PenTool, Footprints } from 'lucide-react';
+import { MapPin, Briefcase, Database, Code, PenTool, Footprints, Undo2} from 'lucide-react';
 
 const BulletPoints = () => {
   const bulletPoints = [
     { icon: <Briefcase size={20} />, text: 'Product Manager at Uber' },
-    { icon: <MapPin size={20} />, text: 'Based in NYC. Previously, Chicago.' },
+    { icon: <MapPin size={20} />, text: 'Based in NYC, previously Chicago' },
     { icon: <Code size={20} />, text: 'Weekend Software Craftsperson' },
     { icon: <PenTool size={20} />, text: 'Design enthusiast' },
     { icon: <Database size={20} />, text: 'Data background' },
