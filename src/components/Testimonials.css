@@ -1,0 +1,139 @@
+.testimonials {
+  padding: 5% 0;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.testimonial-carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-slide {
+  padding: 25px;
+  box-sizing: border-box;
+  align-self: center;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.attribution {
+    text-align: right;
+  }
+
+.author {
+  font-weight: bold;
+  text-align: right;
+}
+
+.logo-testimonials {
+    max-height: 14px
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: -40px;
+}
+
+.carousel-control.next {
+  right: -40px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .carousel-control.prev {
+    left: 10px;
+  }
+  .carousel-control.next {
+    right: 10px;
+  }
+}
+
+/* Add these styles to your existing Testimonials.css file */
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+  }
+  
+  .carousel-control:hover {
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .carousel-control.prev {
+    left: 10px;
+  }
+  
+  .carousel-control.next {
+    right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-control {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .carousel-control.prev {
+      left: 5px;
+    }
+  
+    .carousel-control.next {
+      right: 5px;
+    }
+  }
+
+ 
