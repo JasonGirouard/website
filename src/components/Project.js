@@ -36,136 +36,7 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projects = [
-    {
-      id: 1,
-      logo: uber_logo,
-      title: "Empowering Uber Freight's Operators",
-      subtitle: "Product Discovery • Codesign • Iterative Development",
-      timeline:  "Timeline: Sept 2021 - Nov 2022",
-      description: "I led product development to empower our Uber Freight operations team to deliver high-quality service. This work included product discovery, codesigning the solution with industry experts, and iterative development. Today, the solution is used everyday by 1,500 people to move over $1B in freight in North America.",
-      image: one_cover,
-      content: (
-        <>
-        <section className="context">
-          <p1>Uber Freight is a digital freight brokerage connecting carriers and shippers via a mobile and web app. Uber Freight is responsible for operating the freight, including providing support for both the carriers and shippers. It was founded in 2017 and by 2020 had ~$1B in revenue.</p1>
-        </section>
-  
-        <section className="challenge">
-          <h4>The challenge</h4>
-          <p>Uber Freight's growth and profitability were negatively impacted as the company faced challenges maintaining high-quality service to customers under rapid expansion. Despite efforts to automate shipments, manual operations remained critical. The 1,000+ person team lacked proper tools, relying on makeshift solutions like Google Sheets, which hindered effectiveness.</p>
-          <p>A first version of new tooling, "workLoad", was quickly built with minimal product discovery which created new issues without solving the original ones. The right solution was essential for growth, especially with an upcoming acquisition that would double the size of the operations team within a year.</p>
-        </section>
-  
-        <section className="role">
-          <h4>My Role</h4>
-          <p>I led this project as Product Manager from funding to launch. I was supported by a team of 7, composed of a Designer, a User Researcher, 4 Developers, and a Product Operations Manager.</p>
-        </section>
-        <hr></hr>
-  
-        <section className="discovery">
-          <h2>Discovery</h2>
-          <p>Initial research focused on two key objectives: understanding preference for old tools over new ones, and identifying inefficiencies caused by missing or disorganized information. Preliminary informal discovery helped gather additional support for the formal process.</p>
-          
-          <h4>Surveys</h4>
-          <p>As Product Operations Manager prior to becoming Product Manager, I surveyed the operations team pre-kickoff. Results consistently showed a preference for the old 'freight-ops' or 'loadboard' tool, primarily due to its superior information organization.</p>
-          <img src={one_1} alt="Survey results showing preference for old tools" className="case-study-image framed-image" />
-  
-          <h4>Data analysis</h4>
-          <p>Data analysis I performed of user actions, segmented by role and tenure, confirmed the hypothesis: users heavily favored old tools for less specific tasks. This trend was consistent across categories.</p>
-          <img src={one_2} alt="Data analysis of user actions" className="case-study-image framed-image" />
-  
-          <h4>Focus Groups</h4>
-          <p>I collaborated with Denver, one of Uber Freight's few dedicated user researchers, to set the research objectives. We identified key users and asked them to document pain points related to our initial findings. A long-tail of user needs & desires was documented, shedding light on the breadth and depth of the problem.</p>
-          <img src={one_3} alt="Survey results showing preference for old tools" className="case-study-image framed-image" />
-
-          <h4>System Usability Scale</h4>
-          <p>To establish a baseline of performance, we partnered with UXR to conduct a System Usability Scale survey (SUS). We also evaluated workLoad's effectiveness in team collaboration, information accessibility, and proactive capabilities. workLoad scored at below-average usability, and scored poorly on complexity consistency.</p>
-          <img src={one_4} alt="System Usability Scale results" className="case-study-image framed-image" />
-        </section>
-  
-        <section className="goals">
-          <h2>Goals & Success Metrics</h2>
-          <p><strong>Objective:</strong> Improve consistency and reduce complexity of workLoad to increase user efficiencies and quality of service.</p>
-          <ul>
-            <li>KR: Improve measured usability from below average (55) to average (68)</li>
-            <li>KR: Reduce voluntary escapes to old tooling, from 60% to below 5% this year</li>
-            <li>KR: Improve scheduling, booking, and invoicing velocity of loads</li>
-          </ul>
-        </section>
-        <hr></hr>
-        <section className="solution">
-          <h2>Solution</h2>
-          <p>Given the breadth of user needs and our relatively low industry, I believed that co-designing would lead to the best solution. I recruited three expert users to represent key roles: Ruby (customer support), Sam (account management), and Tom (carrier sales).</p>
-  
-          <h4>Rapid Prototyping through Codesign</h4>
-          <p>We spent a few hours everyday for a week dedicated to problem analysis, concept review, and design revisions with our design partners. Codesigning led to rapid prototyping and tight feedback loops.</p>
-          <img src={one_5} alt="Survey results showing preference for old tools" className="case-study-image framed-image" />
-
-          <h4>New user needs discovered</h4>
-          <p>Rapid prototyping revealed a lesser known need for flexible systems to accommodate diverse customer processes. We identified configurable workflows and improved collaboration as key to enhancing scheduling, booking, and invoicing efficiency. We expanded our objective to include enhancing configurability.</p>
-  
-          <h4>Jobs to be Done</h4>
-          <p>I mapped the various user types' jobs-to-be-done against their pain points to identify gaps. Ling (product designer) and I refined the design over weeks, addressing all JBTDs and regularly consulting our design partners. A high level of diligence helped to ensure that no stone was left unturned.</p>
-          <img src={one_6} alt="Survey results showing preference for old tools" className="case-study-image framed-image" />
-
-          <h4>Tested Prototype</h4>
-          <p>We evaluated our refined prototype using the initial System Usability Scale with a small user group (n=18). Results showed improvements across all categories, supported by positive qualitative feedback. Prototype testing increased our confidence before initiating development.</p>
-          
-        </section>
-        <hr></hr>
-        <section className="development">
-          <h2>Development</h2>
-          <p>I led a skilled four-person dev team to release iteratively with tight customer feedback loops. This enabled rapid development and continuous refinement based on customer feedback.</p>
-  
-          <h4>Alpha users group established for tight feedback</h4>
-          <p>I worked with operations leaders to form a 10-person 'alpha user' team to preview major changes. I created a Slack channel for feedback and questions while fostering an inclusive, collaborative learning environment. Alpha users provided context for feedback and facilitated rapid refinements.</p>
-  
-          <h4>Incremental Releases</h4>
-          <p>We deployed major architectural changes at once, but rolled out smaller enhancements incrementally without gates. This approach, agreed upon with operations leaders, accelerated improvement and fostered trust, acknowledging some discomfort as part of growth. My team would deploy to production almost every day.</p>
-  
-          <h4>QA</h4>
-          <p>As a Product Operations Manager, I established a habit of daily manual testing that I maintained as Product Manager. This practice enabled quick bug fixes before afternoon releases, boosting team velocity. While we later involved Product Ops and QA teams, I maintain that hands-on PM testing leads to higher product quality and team velocity.</p>
-        </section>
-        <hr></hr>
-        <section className="impact">
-          <h2>Impact</h2>
-          <p>By November, one year after starting discovery, while there were more refinements to be made, we had met our goals:</p>
-          <ul>
-            <li>SUS went from below-average (57) to average (68), with the largest improvements shown to consistency and complexity.</li>
-            <li>Escapes to the old tooling fell to near-zero, allowing us to gate and eventually disable the old tool.</li>
-            <li>Business metrics improved, though not solely due to these product enhancements. Parallel automation efforts, including work by another team under my leadership, contributed to faster scheduling, booking, and invoicing.</li>
-          </ul>
-          <img src={one_8} alt="Impact metrics visualization" className="case-study-image framed-image" />
-          <img src={one_9} alt="Impact metrics visualization" className="case-study-image framed-image" />
-          
-        </section>
-        <hr></hr>
-        <section className="feedback">
-          <h2>Collaboration feedback</h2>
-          <blockquote>
-            <p>"I had the pleasure of working with Jason for the past year and found him to be an excellent design partner. He was creative, flexible, and dependable. Jason consistently approached tasks with enthusiasm and efficiency and was highly organized, often going the extra mile to ensure that projects were completed on time and to the highest standard. In addition to his strong work ethic and positive attitude, Jason was a proactive problem-solver who was not afraid to come up with creative solutions to complex issues. He was also skilled at bringing together various stakeholders and effectively driving projects to completion, which was critical for our projects' success."</p>
-            <footer>— Ling, Staff Product Designer</footer>
-          </blockquote>
-          <blockquote>
-            <p>"I have really enjoyed working with Jason over the past year as he took on full ownership of the product for the Load Management team. Jason was very thoughtful with planning the halves, sprints and detail oriented with execution. Led the sprint planning meetings effectively and actively contributed to all other team meetings (ex: stand ups, retros etc). Built trust with the team by being transparent and ensuring everyone understood the rationale behind decisions (ex: AR reprioritization, EE task prioritization during sprint planning etc). Engineers on the team enjoy working with Jason as well. I'm looking forward to more collaboration in the future and excited about the results the team will deliver."</p>
-            <footer>— Ravi, Sr Engineering Manager</footer>
-          </blockquote>
-        </section>
-  
-        <section className="learnings">
-          <h2>Personal Learnings</h2>
-          <ul>
-            <li><strong>Co-design:</strong> Effective for complex needs and rapid delivery when domain expertise is lacking.</li>
-            <li><strong>Continuous user involvement:</strong> Tight feedback loop with alpha users and design partners improved outcomes.</li>
-            <li><strong>Qualitative data and storytelling:</strong> Valuable for stakeholder buy-in and solution development when hard data is scarce.</li>
-            <li><strong>Simple success metrics:</strong> Escape rates and SUS provided clear indicators of progress and informed product decisions.</li>
-            <li><strong>Hands-on PM approach:</strong> Daily testing and involvement in discovery/development enhanced team synchronization and rapid delivery.</li>
-          </ul>
-        </section>
-      </>
-      ),
-
-    },
+    
     {
       id: 2,
       logo: uber_logo,
@@ -313,6 +184,136 @@ const Projects = () => {
           </section>
         </>
       ),
+    },
+    {
+      id: 1,
+      logo: uber_logo,
+      title: "Empowering Uber Freight's Operators",
+      subtitle: "Product Discovery • Codesign • Iterative Development",
+      timeline:  "Timeline: Sept 2021 - Nov 2022",
+      description: "I led product development to empower our Uber Freight operations team to deliver high-quality service. This work included product discovery, codesigning the solution with industry experts, and iterative development. Today, the solution is used everyday by 1,500 people to move over $1B in freight in North America.",
+      image: one_cover,
+      content: (
+        <>
+        <section className="context">
+          <p1>Uber Freight is a digital freight brokerage connecting carriers and shippers via a mobile and web app. Uber Freight is responsible for operating the freight, including providing support for both the carriers and shippers. It was founded in 2017 and by 2020 had ~$1B in revenue.</p1>
+        </section>
+  
+        <section className="challenge">
+          <h4>The challenge</h4>
+          <p>Uber Freight's growth and profitability were negatively impacted as the company faced challenges maintaining high-quality service to customers under rapid expansion. Despite efforts to automate shipments, manual operations remained critical. The 1,000+ person team lacked proper tools, relying on makeshift solutions like Google Sheets, which hindered effectiveness.</p>
+          <p>A first version of new tooling, "workLoad", was quickly built with minimal product discovery which created new issues without solving the original ones. The right solution was essential for growth, especially with an upcoming acquisition that would double the size of the operations team within a year.</p>
+        </section>
+  
+        <section className="role">
+          <h4>My Role</h4>
+          <p>I led this project as Product Manager from funding to launch. I was supported by a team of 7, composed of a Designer, a User Researcher, 4 Developers, and a Product Operations Manager.</p>
+        </section>
+        <hr></hr>
+  
+        <section className="discovery">
+          <h2>Discovery</h2>
+          <p>Initial research focused on two key objectives: understanding preference for old tools over new ones, and identifying inefficiencies caused by missing or disorganized information. Preliminary informal discovery helped gather additional support for the formal process.</p>
+          
+          <h4>Surveys</h4>
+          <p>As Product Operations Manager prior to becoming Product Manager, I surveyed the operations team pre-kickoff. Results consistently showed a preference for the old 'freight-ops' or 'loadboard' tool, primarily due to its superior information organization.</p>
+          <img src={one_1} alt="Survey results showing preference for old tools" className="case-study-image framed-image" />
+  
+          <h4>Data analysis</h4>
+          <p>Data analysis I performed of user actions, segmented by role and tenure, confirmed the hypothesis: users heavily favored old tools for less specific tasks. This trend was consistent across categories.</p>
+          <img src={one_2} alt="Data analysis of user actions" className="case-study-image framed-image" />
+  
+          <h4>Focus Groups</h4>
+          <p>I collaborated with Denver, one of Uber Freight's few dedicated user researchers, to set the research objectives. We identified key users and asked them to document pain points related to our initial findings. A long-tail of user needs & desires was documented, shedding light on the breadth and depth of the problem.</p>
+          <img src={one_3} alt="Survey results showing preference for old tools" className="case-study-image framed-image" />
+
+          <h4>System Usability Scale</h4>
+          <p>To establish a baseline of performance, we partnered with UXR to conduct a System Usability Scale survey (SUS). We also evaluated workLoad's effectiveness in team collaboration, information accessibility, and proactive capabilities. workLoad scored at below-average usability, and scored poorly on complexity consistency.</p>
+          <img src={one_4} alt="System Usability Scale results" className="case-study-image framed-image" />
+        </section>
+  
+        <section className="goals">
+          <h2>Goals & Success Metrics</h2>
+          <p><strong>Objective:</strong> Improve consistency and reduce complexity of workLoad to increase user efficiencies and quality of service.</p>
+          <ul>
+            <li>KR: Improve measured usability from below average (55) to average (68)</li>
+            <li>KR: Reduce voluntary escapes to old tooling, from 60% to below 5% this year</li>
+            <li>KR: Improve scheduling, booking, and invoicing velocity of loads</li>
+          </ul>
+        </section>
+        <hr></hr>
+        <section className="solution">
+          <h2>Solution</h2>
+          <p>Given the breadth of user needs and our relatively low industry, I believed that co-designing would lead to the best solution. I recruited three expert users to represent key roles: Ruby (customer support), Sam (account management), and Tom (carrier sales).</p>
+  
+          <h4>Rapid Prototyping through Codesign</h4>
+          <p>We spent a few hours everyday for a week dedicated to problem analysis, concept review, and design revisions with our design partners. Codesigning led to rapid prototyping and tight feedback loops.</p>
+          <img src={one_5} alt="Survey results showing preference for old tools" className="case-study-image framed-image" />
+
+          <h4>New user needs discovered</h4>
+          <p>Rapid prototyping revealed a lesser known need for flexible systems to accommodate diverse customer processes. We identified configurable workflows and improved collaboration as key to enhancing scheduling, booking, and invoicing efficiency. We expanded our objective to include enhancing configurability.</p>
+  
+          <h4>Jobs to be Done</h4>
+          <p>I mapped the various user types' jobs-to-be-done against their pain points to identify gaps. Ling (product designer) and I refined the design over weeks, addressing all JBTDs and regularly consulting our design partners. A high level of diligence helped to ensure that no stone was left unturned.</p>
+          <img src={one_6} alt="Survey results showing preference for old tools" className="case-study-image framed-image" />
+
+          <h4>Tested Prototype</h4>
+          <p>We evaluated our refined prototype using the initial System Usability Scale with a small user group (n=18). Results showed improvements across all categories, supported by positive qualitative feedback. Prototype testing increased our confidence before initiating development.</p>
+          
+        </section>
+        <hr></hr>
+        <section className="development">
+          <h2>Development</h2>
+          <p>I led a skilled four-person dev team to release iteratively with tight customer feedback loops. This enabled rapid development and continuous refinement based on customer feedback.</p>
+  
+          <h4>Alpha users group established for tight feedback</h4>
+          <p>I worked with operations leaders to form a 10-person 'alpha user' team to preview major changes. I created a Slack channel for feedback and questions while fostering an inclusive, collaborative learning environment. Alpha users provided context for feedback and facilitated rapid refinements.</p>
+  
+          <h4>Incremental Releases</h4>
+          <p>We deployed major architectural changes at once, but rolled out smaller enhancements incrementally without gates. This approach, agreed upon with operations leaders, accelerated improvement and fostered trust, acknowledging some discomfort as part of growth. My team would deploy to production almost every day.</p>
+  
+          <h4>QA</h4>
+          <p>As a Product Operations Manager, I established a habit of daily manual testing that I maintained as Product Manager. This practice enabled quick bug fixes before afternoon releases, boosting team velocity. While we later involved Product Ops and QA teams, I maintain that hands-on PM testing leads to higher product quality and team velocity.</p>
+        </section>
+        <hr></hr>
+        <section className="impact">
+          <h2>Impact</h2>
+          <p>By November, one year after starting discovery, while there were more refinements to be made, we had met our goals:</p>
+          <ul>
+            <li>SUS went from below-average (57) to average (68), with the largest improvements shown to consistency and complexity.</li>
+            <li>Escapes to the old tooling fell to near-zero, allowing us to gate and eventually disable the old tool.</li>
+            <li>Business metrics improved, though not solely due to these product enhancements. Parallel automation efforts, including work by another team under my leadership, contributed to faster scheduling, booking, and invoicing.</li>
+          </ul>
+          <img src={one_8} alt="Impact metrics visualization" className="case-study-image framed-image" />
+          <img src={one_9} alt="Impact metrics visualization" className="case-study-image framed-image" />
+          
+        </section>
+        <hr></hr>
+        <section className="feedback">
+          <h2>Collaboration feedback</h2>
+          <blockquote>
+            <p>"I had the pleasure of working with Jason for the past year and found him to be an excellent design partner. He was creative, flexible, and dependable. Jason consistently approached tasks with enthusiasm and efficiency and was highly organized, often going the extra mile to ensure that projects were completed on time and to the highest standard. In addition to his strong work ethic and positive attitude, Jason was a proactive problem-solver who was not afraid to come up with creative solutions to complex issues. He was also skilled at bringing together various stakeholders and effectively driving projects to completion, which was critical for our projects' success."</p>
+            <footer>— Ling, Staff Product Designer</footer>
+          </blockquote>
+          <blockquote>
+            <p>"I have really enjoyed working with Jason over the past year as he took on full ownership of the product for the Load Management team. Jason was very thoughtful with planning the halves, sprints and detail oriented with execution. Led the sprint planning meetings effectively and actively contributed to all other team meetings (ex: stand ups, retros etc). Built trust with the team by being transparent and ensuring everyone understood the rationale behind decisions (ex: AR reprioritization, EE task prioritization during sprint planning etc). Engineers on the team enjoy working with Jason as well. I'm looking forward to more collaboration in the future and excited about the results the team will deliver."</p>
+            <footer>— Ravi, Sr Engineering Manager</footer>
+          </blockquote>
+        </section>
+  
+        <section className="learnings">
+          <h2>Personal Learnings</h2>
+          <ul>
+            <li><strong>Co-design:</strong> Effective for complex needs and rapid delivery when domain expertise is lacking.</li>
+            <li><strong>Continuous user involvement:</strong> Tight feedback loop with alpha users and design partners improved outcomes.</li>
+            <li><strong>Qualitative data and storytelling:</strong> Valuable for stakeholder buy-in and solution development when hard data is scarce.</li>
+            <li><strong>Simple success metrics:</strong> Escape rates and SUS provided clear indicators of progress and informed product decisions.</li>
+            <li><strong>Hands-on PM approach:</strong> Daily testing and involvement in discovery/development enhanced team synchronization and rapid delivery.</li>
+          </ul>
+        </section>
+      </>
+      ),
+
     }
   ];
 

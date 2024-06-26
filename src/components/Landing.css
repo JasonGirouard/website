@@ -3,14 +3,14 @@
   display: flex;
   align-items: center;
   min-height: 80vh;
-  padding: 5% 0;
+  /* padding: 5% 0; */
   padding-top: 67px;
 }
 
 
 .landing-text, .landing-image {
   /* flex: 1; */
-  padding: 20px;
+  padding: 1rem;
 }
 
 .landing-text {
