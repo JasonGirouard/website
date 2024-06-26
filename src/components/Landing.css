@@ -1,0 +1,75 @@
+/* Landing.css */
+.landing {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  padding: 5% 0;
+  padding-top: 67px;
+}
+
+
+.landing-text, .landing-image {
+  /* flex: 1; */
+  padding: 20px;
+}
+
+.landing-text {
+  justify-self: flex-start;
+}
+
+.landing-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.landing-text h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.landing-text h1 .highlight {
+  font-weight: bold;
+  /* text-decoration: underline; */
+}
+
+.landing-text .subtext {
+  font-size: 1rem;
+  color: #888;
+  margin-top: 1rem;
+}
+
+.landing-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .landing {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .landing-text, .landing-image {
+    width: 100%;
+    /* margin-bottom: 2rem; */
+  }
+  .landing-text {
+    text-align: start;
+  }
+
+  
+
+  .landing-text h2 {
+    font-size: 1.25rem;
+  }
+
+  .landing-text h1 {
+    font-size: 2rem;
+  }
+
+  .landing-text .subtext {
+    font-size: 1rem;
+  }
+}

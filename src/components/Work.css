@@ -1,0 +1,54 @@
+
+/* Work.css */
+.work {
+    padding: 5% 0;
+  }
+  
+  .project {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  
+  .project-image, .project-info {
+    flex: 1;
+  }
+  
+  .project-info {
+    padding-left: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .project {
+      flex-direction: column;
+    }
+  
+    .project-info {
+      padding-left: 0;
+      padding-top: 1rem;
+    }
+  }
+  
+  .case-study-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background: white;
+    padding: 2rem;
+    box-shadow: -2px 0 4px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    z-index: 1001;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  @media (max-width: 768px) {
+    .case-study-panel {
+      width: 100%;
+      right: -100%;
+    }
+  
+    .case-study-panel.open {
+      right: 0;
+    }
+  }

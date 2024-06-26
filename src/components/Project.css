@@ -1,0 +1,116 @@
+/* Projects.css */
+.projects {
+    padding: 2rem 0;
+  }
+  
+  .project-card {
+    display: flex;
+    margin-bottom: 3rem;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-image {
+    width: 40%;
+    object-fit: cover;
+  }
+  
+  .project-info {
+    padding: 2rem;
+    width: 60%;
+  }
+  
+  .project-info h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .project-info h4 {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .project-info button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .project-card {
+      flex-direction: column;
+    }
+  
+    .project-image,
+    .project-info {
+      width: 100%;
+    }
+  }
+  
+
+
+
+
+
+/* Project.css */ 
+
+/* .project {
+  display: flex;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.project-image {
+  flex: 1;
+}
+
+.project-info {
+  flex: 1;
+  padding: 0 2rem;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border: 10px solid white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+} */
+
+
+
+/* Alternate layout for even projects */
+.project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+/* 
+.project h3 {
+  margin-top: 0;
+}
+
+.project button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .project,
+  .project:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .project-info {
+    padding: 1rem 0 0 0;
+  }
+} */

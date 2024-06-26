@@ -1,0 +1,48 @@
+
+/* About.css */
+.about {
+    padding: 5% 0;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-text {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .about-image {
+    flex: 1;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border: 10px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .resume-link {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column-reverse;
+    }
+  
+    .about-text {
+      padding-right: 0;
+      margin-top: 1rem;
+    }
+  }
+  
