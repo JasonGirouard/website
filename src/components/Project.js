@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CaseStudy from './CaseStudy';
 import './Project.css';
-import faceColorImage from '../images/face_color.jpg';
+
 
 // case study 1 
 import uber_logo from '../images/case_1/uber_logo.png'
@@ -27,10 +27,6 @@ import two_6 from '../images/case_2/6_stack_rank.png'
 import two_7 from '../images/case_2/7_vision.png'
 import two_cover from '../images/case_2/2_cover_image.png'
 
-
-import userJourneyMapImage from '../images/face_color.jpg';
-import problemStackRankImage from '../images/face_color.jpg';
-import productVisionConceptImage from '../images/face_color.jpg';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
