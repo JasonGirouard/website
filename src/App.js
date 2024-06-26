@@ -30,14 +30,7 @@ const App = () => {
         <div ref={aboutRef}><About /></div>
         <div className="section-divider"></div>
         <div ref={contactRef}><Contact /></div>
-        <iframe
-            src="https://docs.google.com/document/d/e/2PACX-1vTI8BjKNiVJH_zKb7LlHkNly6PZpc5mq0ORi0_WV37sWKlW269m2en74l_9jaOuxlXAxPWVKNIKHyM1/pub?embedded=true"
-            title="test title"
-            width="100%"
-            height="100%"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
+        
       </div>
     </div>
   );
