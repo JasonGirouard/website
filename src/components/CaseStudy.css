@@ -93,7 +93,13 @@
     .case-study-panel {
       max-width: 100%;
     }
+
+   
+
+
   }
+
+ 
 
   .section-with-image {
     display: flex;
@@ -107,11 +113,7 @@
     min-width: 50%;
   }
   
-  .section-image {
-    flex: 1;
-    min-width: 50%;
-    padding-left: 1rem;
-  }
+
   
   .section-image img {
     max-width: 100%;
@@ -141,4 +143,17 @@
     .case-study-panel {
       min-width: 768px;
     }
+
+    .case-study-image {
+        max-width: 100%;
+        max-width: 510px;
+        
+      }
+
+  }
+
+  h7 {
+font-size: 1rem;
+font-weight: normal;
+color: #000000
   }

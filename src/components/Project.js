@@ -4,6 +4,7 @@ import './Project.css';
 import faceColorImage from '../images/face_color.jpg';
 
 // case study 1 
+import uber_logo from '../images/case_1/uber_logo.png'
 import one_1 from '../images/case_1/0_feedback.png'
 import one_2 from '../images/case_1/1_data.png'
 import one_3 from '../images/case_1/2_focus_group.png'
@@ -37,29 +38,32 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      logo: uber_logo,
       title: "Empowering Uber Freight's Operators",
-      subtitle: "Timeline: Sept 2021 - Nov 2022",
+      subtitle: "Product Discovery • Codesign • Iterative Development",
+      timeline:  "Timeline: Sept 2021 - Nov 2022",
       description: "I led product development to empower our Uber Freight operations team to deliver high-quality service. This work included product discovery, codesigning the solution with industry experts, and iterative development. Today, the solution is used everyday by 1,500 people to move over $1B in freight in North America.",
       image: one_cover,
       content: (
         <>
         <section className="context">
-          <p>Uber Freight is a digital freight brokerage connecting carriers and shippers via a mobile and web app. Uber Freight is responsible for operating the freight, including providing support for both the carriers and shippers. It was founded in 2017 and by 2020 had ~$1B in revenue.</p>
+          <p1>Uber Freight is a digital freight brokerage connecting carriers and shippers via a mobile and web app. Uber Freight is responsible for operating the freight, including providing support for both the carriers and shippers. It was founded in 2017 and by 2020 had ~$1B in revenue.</p1>
         </section>
   
         <section className="challenge">
-          <h3>The challenge</h3>
+          <h4>The challenge</h4>
           <p>Uber Freight's growth and profitability were negatively impacted as the company faced challenges maintaining high-quality service to customers under rapid expansion. Despite efforts to automate shipments, manual operations remained critical. The 1,000+ person team lacked proper tools, relying on makeshift solutions like Google Sheets, which hindered effectiveness.</p>
           <p>A first version of new tooling, "workLoad", was hastily built with minimal product discovery which created new issues without solving the original ones. The right solution was essential for growth, especially with an upcoming acquisition that would double the size of the operations team within a year.</p>
         </section>
   
         <section className="role">
-          <h3>My Role</h3>
+          <h4>My Role</h4>
           <p>I led this project as Product Manager from funding to launch. I was supported by a team of 7, composed of a Designer, a User Researcher, 4 Developers, and a Product Operations Manager.</p>
         </section>
+        <hr></hr>
   
         <section className="discovery">
-          <h3>Discovery</h3>
+          <h2>Discovery</h2>
           <p>Initial research focused on two key objectives: understanding preference for old tools over new ones, and identifying inefficiencies caused by missing or disorganized information. Preliminary informal discovery helped gather additional support for the formal process.</p>
           
           <h4>Surveys</h4>
@@ -80,7 +84,7 @@ const Projects = () => {
         </section>
   
         <section className="goals">
-          <h3>Goals & Success Metrics</h3>
+          <h2>Goals & Success Metrics</h2>
           <p><strong>Objective:</strong> Improve consistency and reduce complexity of workLoad to increase user efficiencies and quality of service.</p>
           <ul>
             <li>KR: Improve measured usability from below average (55) to average (68)</li>
@@ -88,9 +92,9 @@ const Projects = () => {
             <li>KR: Improve scheduling, booking, and invoicing velocity of loads</li>
           </ul>
         </section>
-  
+        <hr></hr>
         <section className="solution">
-          <h3>Solution</h3>
+          <h2>Solution</h2>
           <p>Given the breadth of user needs and our relatively low industry, I believed that co-designing would lead to the best solution. I recruited three expert users to represent key roles: Ruby (customer support), Sam (account management), and Tom (carrier sales).</p>
   
           <h4>Rapid Prototyping through Codesign</h4>
@@ -108,9 +112,9 @@ const Projects = () => {
           <p>We evaluated our refined prototype using the initial System Usability Scale with a small user group (n=18). Results showed improvements across all categories, supported by positive qualitative feedback. Prototype testing increased our confidence before initiating development.</p>
           
         </section>
-  
+        <hr></hr>
         <section className="development">
-          <h3>Development</h3>
+          <h2>Development</h2>
           <p>I led a skilled four-person dev team to release iteratively with tight customer feedback loops. This enabled rapid development and continuous refinement based on customer feedback.</p>
   
           <h4>Alpha users group established for tight feedback</h4>
@@ -122,9 +126,9 @@ const Projects = () => {
           <h4>QA</h4>
           <p>As a Product Operations Manager, I established a habit of daily manual testing that I maintained as Product Manager. This practice enabled quick bug fixes before afternoon releases, boosting team velocity. While we later involved Product Ops and QA teams, I maintain that hands-on PM testing leads to higher product quality and team velocity.</p>
         </section>
-  
+        <hr></hr>
         <section className="impact">
-          <h3>Impact</h3>
+          <h2>Impact</h2>
           <p>By November, one year after starting discovery, while there were more refinements to be made, we had met our goals:</p>
           <ul>
             <li>SUS went from below-average (57) to average (68), with the largest improvements shown to consistency and complexity.</li>
@@ -135,9 +139,9 @@ const Projects = () => {
           <img src={one_9} alt="Impact metrics visualization" className="case-study-image framed-image" />
           
         </section>
-  
+        <hr></hr>
         <section className="feedback">
-          <h3>Collaboration feedback</h3>
+          <h2>Collaboration feedback</h2>
           <blockquote>
             <p>"I had the pleasure of working with Jason for the past year and found him to be an excellent design partner. He was creative, flexible, and dependable. Jason consistently approached tasks with enthusiasm and efficiency and was highly organized, often going the extra mile to ensure that projects were completed on time and to the highest standard. In addition to his strong work ethic and positive attitude, Jason was a proactive problem-solver who was not afraid to come up with creative solutions to complex issues. He was also skilled at bringing together various stakeholders and effectively driving projects to completion, which was critical for our projects' success."</p>
             <footer>— Ling, Staff Product Designer</footer>
@@ -149,7 +153,7 @@ const Projects = () => {
         </section>
   
         <section className="learnings">
-          <h3>Personal Learnings</h3>
+          <h2>Personal Learnings</h2>
           <ul>
             <li><strong>Co-design:</strong> Effective for complex needs and rapid delivery when domain expertise is lacking.</li>
             <li><strong>Continuous user involvement:</strong> Tight feedback loop with alpha users and design partners improved outcomes.</li>
@@ -164,8 +168,10 @@ const Projects = () => {
     },
     {
       id: 2,
+      logo: uber_logo,
       title: "Developing Uber Freight's Managed Transportation Product Strategy and Vision",
-      subtitle: "Timeline: June 2023 - Dec 2023",
+      subtitle: "Product Strategy • Product Vision Prototype • Customer Problem Stack Rank",
+      timeline:  "Timeline: June 2023 - Dec 2023",
       description: "I led my team to create the product strategy and vision for Uber Freight's Managed Transportation business by understanding its current state, aligning the leadership team on goals and opportunities, and developing an action plan for adjacent teams. This strategy guided the work of a $500m/yr business.",
       image: two_cover,
       content: (
@@ -315,15 +321,18 @@ const Projects = () => {
       <h2>Featured Projects</h2>
       {projects.map(project => (
         <div key={project.id} className="project-card">
-          <img src={project.image} alt={project.title} className="project-image" />
+          <img src={project.image} alt={project.title} className="project-image framed-image" />
           <div className="project-info">
+            <img src={project.logo} alt={project.title} className="project-logo" />
             <h3>{project.title}</h3>
             <h4>{project.subtitle}</h4>
             <p>{project.description}</p>
             <button onClick={() => setSelectedProject(project)}>View Case Study</button>
+            
           </div>
           
         </div>
+        
       ))}
       {selectedProject && (
         <CaseStudy

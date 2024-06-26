@@ -25,8 +25,8 @@ const CaseStudy = ({ project, onClose }) => {
       <div className={`case-study-panel ${isOpen ? 'open' : ''}`}>
         <button onClick={handleClose} className="close-button">&times;</button>
         <div className="case-study-content">
-          <h2>{project.title}</h2>
-          <h3>{project.subtitle}</h3>
+          <h1>{project.title}</h1>
+          <p1>{project.timeline}</p1>
           <p>{project.description}</p>
           {project.content}
         </div>

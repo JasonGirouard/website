@@ -9,7 +9,7 @@ const Work = () => {
 
   return (
     <div className="work">
-      <h2>Work</h2>
+      {/* <h2>Work</h2> */}
       <Project 
         />
     </div>

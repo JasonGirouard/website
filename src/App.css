@@ -27,7 +27,9 @@ body {
   
   .container {
     background-color: white;
+    background-color: #F5F5F5;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 1px solid #333;
   }
 }
 
