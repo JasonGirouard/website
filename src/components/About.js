@@ -2,7 +2,7 @@
 import React from 'react';
  import '../App.css';
 import './About.css';
-import AboutMeImage from '../images/torso_shot.JPG';
+import AboutMeImage from '../images/torso_shot.png';
 
 
 const About = () => {

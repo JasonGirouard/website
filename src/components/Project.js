@@ -325,9 +325,9 @@ const Projects = () => {
           <div className="project-info">
             <img src={project.logo} alt={project.title} className="project-logo" />
             <h3>{project.title}</h3>
-            <h4>{project.subtitle}</h4>
+            <p2>{project.subtitle}</p2>
             <p>{project.description}</p>
-            <button onClick={() => setSelectedProject(project)}>View Case Study</button>
+            <button className="view-case-study-button" onClick={() => setSelectedProject(project)}>Open Project</button>
             
           </div>
           

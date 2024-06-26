@@ -73,3 +73,45 @@
     font-size: 1rem;
   }
 }
+
+/* bullets */ 
+
+.bullet-points {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bullet-point {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  width: 50%;
+}
+
+.bullet-icon {
+  margin-right: 0.5rem;
+  color: black;
+}
+
+.bullet-text {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .bullet-points {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+  
+  .bullet-point {
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  
+  .bullet-text {
+    font-size: 0.9rem;
+  }
+}

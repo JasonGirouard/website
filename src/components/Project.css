@@ -45,7 +45,7 @@
     margin-bottom: 1rem;
   }
   
-  .project-info button {
+  /* .project-info button {
     background-color: #007bff;
     color: white;
     border: none;
@@ -54,7 +54,7 @@
     cursor: pointer;
     font-size: 1rem;
     margin-top: 1rem;
-  }
+  } */
   
   @media (max-width: 768px) {
     .project-card {
@@ -89,4 +89,23 @@
   p1 {
       font-size: 1rem;
       font-style: italic;
+  }
+
+  p2 {
+    font-size: 1rem;
+    font-style: italic;
+    color: gray;
+}
+
+.view-case-study-button {
+    background-color: black;
+    background: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
   }
