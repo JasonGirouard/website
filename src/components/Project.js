@@ -4,13 +4,29 @@ import './Project.css';
 import faceColorImage from '../images/face_color.jpg';
 
 // case study 1 
-import surveyImage from '../images/face_color.jpg';
-import dataAnalysisImage from '../images/face_color.jpg';
-import susImage from '../images/face_color.jpg';
-import prototypeImage from '../images/face_color.jpg';
-import impactImage from '../images/face_color.jpg';
+import one_1 from '../images/case_1/0_feedback.png'
+import one_2 from '../images/case_1/1_data.png'
+import one_3 from '../images/case_1/2_focus_group.png'
+import one_4 from '../images/case_1/3_sus.png'
+import one_5 from '../images/case_1/4_cocreation.png'
+import one_6 from '../images/case_1/5_jtbd.png'
+import one_8 from '../images/case_1/7_results.png'
+import one_9 from '../images/case_1/8_results.png'
+import one_cover from '../images/case_1/case_1_cover.png'
+
 
 // case study 2 
+
+import two_1 from '../images/case_2/1_triple_diamond.png'
+import two_2 from '../images/case_2/2_wau.png'
+import two_3 from '../images/case_2/3_journey_map.png'
+// import two_4 from '../images/case_2/.png'
+import two_5 from '../images/case_2/5_cspr.png'
+import two_6 from '../images/case_2/6_stack_rank.png'
+import two_7 from '../images/case_2/7_vision.png'
+import two_cover from '../images/case_2/2_cover_image.png'
+
+
 import userJourneyMapImage from '../images/face_color.jpg';
 import problemStackRankImage from '../images/face_color.jpg';
 import productVisionConceptImage from '../images/face_color.jpg';
@@ -24,7 +40,7 @@ const Projects = () => {
       title: "Empowering Uber Freight's Operators",
       subtitle: "Timeline: Sept 2021 - Nov 2022",
       description: "I led product development to empower our Uber Freight operations team to deliver high-quality service. This work included product discovery, codesigning the solution with industry experts, and iterative development. Today, the solution is used everyday by 1,500 people to move over $1B in freight in North America.",
-      image: faceColorImage,
+      image: one_cover,
       content: (
         <>
         <section className="context">
@@ -48,18 +64,19 @@ const Projects = () => {
           
           <h4>Surveys</h4>
           <p>As Product Operations Manager prior to becoming Product Manager, I surveyed the operations team pre-kickoff. Results consistently showed a preference for the old 'freight-ops' or 'loadboard' tool, primarily due to its superior information organization.</p>
-          <img src={surveyImage} alt="Survey results showing preference for old tools" className="case-study-image framed-image" />
+          <img src={one_1} alt="Survey results showing preference for old tools" className="case-study-image framed-image" />
   
           <h4>Data analysis</h4>
           <p>Data analysis I performed of user actions, segmented by role and tenure, confirmed the hypothesis: users heavily favored old tools for less specific tasks. This trend was consistent across categories.</p>
-          <img src={dataAnalysisImage} alt="Data analysis of user actions" className="case-study-image framed-image" />
+          <img src={one_2} alt="Data analysis of user actions" className="case-study-image framed-image" />
   
           <h4>Focus Groups</h4>
           <p>I collaborated with Denver, one of Uber Freight's few dedicated user researchers, to set the research objectives. We identified key users and asked them to document pain points related to our initial findings. A long-tail of user needs & desires was documented, shedding light on the breadth and depth of the problem.</p>
-  
+          <img src={one_3} alt="Survey results showing preference for old tools" className="case-study-image framed-image" />
+
           <h4>System Usability Scale</h4>
           <p>To establish a baseline of performance, we partnered with UXR to conduct a System Usability Scale survey (SUS). We also evaluated workLoad's effectiveness in team collaboration, information accessibility, and proactive capabilities. workLoad scored at below-average usability, and scored poorly on complexity consistency.</p>
-          <img src={susImage} alt="System Usability Scale results" className="case-study-image framed-image" />
+          <img src={one_4} alt="System Usability Scale results" className="case-study-image framed-image" />
         </section>
   
         <section className="goals">
@@ -78,16 +95,18 @@ const Projects = () => {
   
           <h4>Rapid Prototyping through Codesign</h4>
           <p>We spent a few hours everyday for a week dedicated to problem analysis, concept review, and design revisions with our design partners. Codesigning led to rapid prototyping and tight feedback loops.</p>
-  
+          <img src={one_5} alt="Survey results showing preference for old tools" className="case-study-image framed-image" />
+
           <h4>New user needs discovered</h4>
           <p>Rapid prototyping revealed a lesser known need for flexible systems to accommodate diverse customer processes. We identified configurable workflows and improved collaboration as key to enhancing scheduling, booking, and invoicing efficiency. We expanded our objective to include enhancing configurability.</p>
   
           <h4>Jobs to be Done</h4>
           <p>I mapped the various user types' jobs-to-be-done against their pain points to identify gaps. Ling (product designer) and I refined the design over weeks, addressing all JBTDs and regularly consulting our design partners. A high level of diligence helped to ensure that no stone was left unturned.</p>
-  
+          <img src={one_6} alt="Survey results showing preference for old tools" className="case-study-image framed-image" />
+
           <h4>Tested Prototype</h4>
           <p>We evaluated our refined prototype using the initial System Usability Scale with a small user group (n=18). Results showed improvements across all categories, supported by positive qualitative feedback. Prototype testing increased our confidence before initiating development.</p>
-          <img src={prototypeImage} alt="Prototype testing results" className="case-study-image framed-image" />
+          
         </section>
   
         <section className="development">
@@ -112,7 +131,9 @@ const Projects = () => {
             <li>Escapes to the old tooling fell to near-zero, allowing us to gate and eventually disable the old tool.</li>
             <li>Business metrics improved, though not solely due to these product enhancements. Parallel automation efforts, including work by another team under my leadership, contributed to faster scheduling, booking, and invoicing.</li>
           </ul>
-          <img src={impactImage} alt="Impact metrics visualization" className="case-study-image framed-image" />
+          <img src={one_8} alt="Impact metrics visualization" className="case-study-image framed-image" />
+          <img src={one_9} alt="Impact metrics visualization" className="case-study-image framed-image" />
+          
         </section>
   
         <section className="feedback">
@@ -146,7 +167,7 @@ const Projects = () => {
       title: "Developing Uber Freight's Managed Transportation Product Strategy and Vision",
       subtitle: "Timeline: June 2023 - Dec 2023",
       description: "I led my team to create the product strategy and vision for Uber Freight's Managed Transportation business by understanding its current state, aligning the leadership team on goals and opportunities, and developing an action plan for adjacent teams. This strategy guided the work of a $500m/yr business.",
-      image: faceColorImage,
+      image: two_cover,
       content: (
         <>
           <section className="context">
@@ -183,6 +204,7 @@ const Projects = () => {
               <li><strong>Scope:</strong> We would focus on the user value & experience from beginning to end (horizontally). We wouldn't be going deep in any one specific phase (vertically).</li>
             </ul>
             <p>My mantra throughout this process became "Before we get excited about the low-hanging fruit, let's be sure we're under the right tree".</p>
+            <img src={two_1} alt="Impact metrics visualization" className="case-study-image framed-image" />
             <p>After aligning on the process and goals with our working group and sponsors, it proved valuable to socialize it with stakeholders who were less familiar with modern product development principles.</p>
             <p><em>As an aside: While I simultaneously oversaw three scrum teams of 30 (mostly offshore) engineers that supported the existing application, I was able to rely on Product Operations to manage these teams. This allowed me to focus on creating value in the highest leverage way.</em></p>
           </section>
@@ -199,10 +221,11 @@ const Projects = () => {
     
             <h4>Usage Data Analysis</h4>
             <p>Despite limited data, I identified the key TMS applications and their weekly active users, segmented by internal and external. This brought new objectivity to our understanding of the current usage.</p>
+            <img src={two_2} alt="Impact metrics visualization" className="case-study-image framed-image" />
     
             <h4>User Journey Maps</h4>
             <p>My team built on existing user research to create user journey maps. We reviewed this work with those in the Consultant category. These maps produced artifacts detailing jobs-to-be-done, pain points, and opportunities. Additionally, this work established a shared language for product discussions with leadership, simplifying our approach to the complex solution.</p>
-            <img src={userJourneyMapImage} alt="User Journey Map example" className="case-study-image framed-image" />
+            <img src={two_3} alt="User Journey Map example" className="case-study-image framed-image" />
     
             <h4>Concept Review</h4>
             <p>In my experience, combining design concept creation with problem discovery best illustrates problems and jobs-to-be-done. Leveraging existing relationships, we shared conceptual designs with long-term SaaS customers. This approach yielded more insightful feedback than asking about problems alone, which often resulted in overly tactical or uninformative positive responses.</p>
@@ -215,7 +238,7 @@ const Projects = () => {
               <li>Forced ranking provided perspective, sometimes surprising participants</li>
             </ul>
             <p>The approach effectively identified top problems while securing stakeholder buy-in.</p>
-            <img src={problemStackRankImage} alt="Problem Stack Rank exercise results" className="case-study-image framed-image" />
+            <img src={two_5} alt="Problem Stack Rank exercise results" className="case-study-image framed-image" />
     
             <h4>Competitive Analysis</h4>
             <p>I collaborated with our Strategy & Planning team on competitive analysis, adapting existing material. In hindsight, I should have invested more time here, given the market's maturity and its relevance to our later-identified go-to-market strategy needs.</p>
@@ -228,13 +251,14 @@ const Projects = () => {
             <h4>Prioritized user issues</h4>
             <p>I focused on prioritizing the user issues with the sponsor group (CEO+2). This process clarified trade-offs and resulted in a stack-ranked list of user problems, deep-dives into top priorities, and synthesized user research findings.</p>
             <p>The outcome proved extremely valuable in aligning teams to the work, and sharing knowledge.</p>
+            <img src={two_6} alt="Impact metrics visualization" className="case-study-image framed-image" />
     
             <h4>Primary business objective</h4>
             <p>In truth, specific business objectives took months to crystallize beyond general improvement goals. We offered recommendations, but I learned this process can't be rushed. The resulting insights significantly shaped the top-down objectives.</p>
     
             <h4>Product Vision Concept</h4>
             <p>I worked with product design to create a vision concept featuring simplified onboarding, a unified TMS, and AI-powered solutions. This artifact helped align our large team, clarify priorities, and motivate internally.</p>
-            <img src={productVisionConceptImage} alt="Product Vision Concept" className="case-study-image framed-image" />
+            <img src={two_7} alt="Product Vision Concept" className="case-study-image framed-image" />
           </section>
     
           <section className="mvp">
@@ -298,6 +322,7 @@ const Projects = () => {
             <p>{project.description}</p>
             <button onClick={() => setSelectedProject(project)}>View Case Study</button>
           </div>
+          
         </div>
       ))}
       {selectedProject && (

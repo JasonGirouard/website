@@ -19,20 +19,6 @@ const CaseStudy = ({ project, onClose }) => {
     setTimeout(onClose, 300);
   };
 
-  // const renderSectionWithImage = (title, content, image) => (
-  //   <div className="section-with-image">
-  //     <div className="section-content">
-  //       <h5>{title}</h5>
-  //       <p>{content}</p>
-  //     </div>
-  //     {image && (
-  //       <div className="section-image">
-  //         <img src={image} alt={title} />
-  //       </div>
-  //     )}
-  //   </div>
-  // );
-
   return (
     <>
       <div className={`overlay ${isOpen ? 'open' : ''}`} onClick={handleClose}></div>

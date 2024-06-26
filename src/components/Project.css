@@ -53,64 +53,11 @@
       width: 100%;
     }
   }
-  
-
-
-
-
-
-/* Project.css */ 
-
-/* .project {
-  display: flex;
-  margin-bottom: 3rem;
-  align-items: center;
-}
-
-.project-image {
-  flex: 1;
-}
-
-.project-info {
-  flex: 1;
-  padding: 0 2rem;
-}
-
-.project-image img {
-  max-width: 100%;
-  height: auto;
-  border: 10px solid white;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-} */
-
-
+  @media (min-width: 768px) {
 
 /* Alternate layout for even projects */
-.project:nth-child(even) {
-  flex-direction: row-reverse;
-}
-/* 
-.project h3 {
-  margin-top: 0;
-}
-
-.project button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-top: 1rem;
-}
-
-@media (max-width: 768px) {
-  .project,
-  .project:nth-child(even) {
-    flex-direction: column;
+.project-card:nth-child(even) {
+    flex-direction: row-reverse;
   }
 
-  .project-info {
-    padding: 1rem 0 0 0;
-  }
-} */
+}
