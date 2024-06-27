@@ -114,6 +114,16 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .projects h2 {
-   padding: 1rem;
-   }
+  .projects-header {
+    /* Reset to default styling */
+    font: inherit;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    font-weight: bold;
+    
+    /* Add custom padding */
+    padding: 1rem;
+    border: none;
+    margin: none;
+  }

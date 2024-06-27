@@ -1,3 +1,5 @@
+//Project.js 
+
 import React, { useState } from 'react';
 import CaseStudy from './CaseStudy';
 import './Project.css';
@@ -27,6 +29,11 @@ import two_6 from '../images/case_2/6_stack_rank.png'
 import two_7 from '../images/case_2/7_vision.png'
 import two_cover from '../images/case_2/2_cover_image.png'
 
+import three_cover from '../images/case_3/case_3_cover.png'
+import three_1 from '../images/case_3/1_graph.png'
+import three_2 from '../images/case_3/2_current_state.png'
+import three_3 from '../images/case_3/3_new_experience.png'
+
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -39,7 +46,7 @@ const Projects = () => {
       title: "Developing Uber Freight's Managed Transportation Product Strategy and Vision",
       subtitle: "Product Strategy • Product Vision Prototype • Customer Problem Stack Rank",
       timeline:  "Timeline: June 2023 - Dec 2023",
-      description: "I led my team to create the product strategy and vision for Uber Freight's Managed Transportation business by understanding its current state, aligning the leadership team on goals and opportunities, and developing an action plan for adjacent teams. This strategy guided the work of a $500m/yr business.",
+      description: "I led my team to create the product strategy and vision for Uber Freight's Managed Transportation business by understanding its current state and aligning the leadership team on goals and opportunities. This strategy guided the work of a $500m/yr business.",
       image: two_cover,
       content: (
         <>
@@ -182,12 +189,162 @@ const Projects = () => {
       ),
     },
     {
+      id: 3,
+      logo: uber_logo,
+      title: "Enhancing Uber Freight's Driver On-Trip Experience to Improve GPS Accuracy",
+      subtitle: "Data Analysis • Guerilla Research • Mobile Development",
+      timeline: "Timeline: Feb 2023 - July 2023",
+      description: "I identified root causes of arrival/departure time inaccuracies through data analysis and user research, linking them to the driver on-trip experience. My enhancements cut defect rates by over 50%.",
+      image: three_cover,
+      content: (
+        <>
+          <section className="context">
+            <p1>Uber Freight is a digital freight brokerage connecting carriers and shippers via a mobile and web app. It was founded in 2017 and by 2020 had ~$1B in revenue.</p1>
+          </section>
+    
+          <section className="challenge">
+            <h4>The challenge</h4>
+            <p>Improve the accuracy of arrival and departure times at facilities. Solve the problem in just six months (start to finish) as engineers must be reassigned to other projects. I was asked to solve this problem which is outside of my normal scope in response to tracking accuracy concerns raised by key customers.</p>
+          </section>
+    
+          <section className="role">
+            <h4>My role</h4>
+            <p>As Product Manager, I led a team of 4 including product ops, an analyst, and two senior mobile engineers. I consulted design and data leads, handling those tasks myself due to constraints.</p>
+          </section>
+    
+          <section className="strategic-context">
+            <h4>Strategic Context</h4>
+            <p>Accurate arrival and departure times are crucial for shippers to assess network efficiency, carrier reliability, and driver compensation. Initially, gate agents manually recorded times inconsistently. The 2017 ELD mandate required most drivers to use logging devices, with aggregators and TMS integrations emerging to collect this data. However, matching issues and ELD variety left gaps in tracking. Our mobile app helped fill these gaps, including manual input options for drivers.</p>
+            <p>Our Load intelligence team had long been focused on improving GPS coverage. When the accuracy of the tracking automation came into question from key customers, I was asked to step in to address the problem due to my strength in data analysis and execution.</p>
+          </section>
+          <hr></hr>
+    
+          <section className="discovery">
+            <h2>Discovery</h2>
+            <p>I approached this issue using as I normally do, first understanding the current state through divergence before diagnosing the issue.</p>
+    
+            <h4>Understanding current state</h4>
+            <p>Measuring accuracy was challenging due to lack of a true counterfactual. Previous methods using gate-agent times were slow and missed the core issue: occasional but significant inaccuracies are what eroded shipper trust, not many small inaccuracies. Much like a cockroach in a bowl of cherries, one small defect soured the customer's mood toward all of our data.</p>
+            <p>With the analyst supporting me (Omar), we developed a proxy for inaccuracy: dwell times under 15 minutes, termed the "defect rate". Our overall defect rate was 8%, higher than desired. Reducing this became our objective.</p>
+            <p>Analyzing data sources, GPS provided most in/out times with a 6% defect rate. However, our driver on-trip experience, while only 7% of total times, caused 30% of defects. A quarter of in-app inputs were defective.</p>
+            <p>This analysis revealed that improving our in-app experience could significantly reduce overall defects, despite its relatively low usage.</p>
+            <img src={three_1} alt="Defect rate analysis" className="case-study-image framed-image" />
+            <p>Note: My approach to data analytics involves two phases: First, an exploratory/divergent phase aiming for a comprehensive understanding of the current state through extensive segmentation and real-world connections. Second, a convergent phase focused on simplifying the story, eliminating noise, and communicating 1-2 key data points that are easily understandable and memorable for the audience. This method ensures thorough analysis followed by clear, impactful communication of findings.</p>
+    
+            <h4>Deeper investigation</h4>
+            <p>With my team, we personally examined 100 random loads with dwell defects. This approach of investigating individual examples is powerful as it builds deep empathy for user experiences and reveals context missing from aggregate data. It uncovered:</p>
+            <ul>
+              <li>In-app defects often stemmed from user workarounds for tech issues. For instance, drivers would rapidly click 'arrived' and 'departed' when arriving, or when realizing the app hadn't registered their arrival.</li>
+              <li>GPS overwrites caused inaccuracies. Our system would overwrite driver-inputted times with GPS data captured when the app was opened, typically at departure. While intended to improve accuracy, this often resulted in defects, especially when drivers only opened the app upon leaving.</li>
+            </ul>
+            <img src={three_2} alt="Data sources analysis" className="case-study-image framed-image" />
+    
+            <h4>Guerilla Research</h4>
+            <p>I then conducted direct driver interviews by calling drivers who've had defects recently. I've found that drivers are eager to talk on the phone and happy that someone will hear their feedback. I found:</p>
+            <ul>
+              <li>Validation and context for the findings above.</li>
+              <li>Dispatchers often used driver accounts, quickly inputting arrival/departure times. This account sharing was more common than expected, potentially reducing GPS accuracy by mixing location data from different users. This mixing of location data would likely show up in GPS defect rates, not in-app defect rates.</li>
+            </ul>
+            <p>This mixed-method discovery approach provided nuanced insights into user behaviors and system limitations causing inaccuracies, going beyond what aggregate data alone could reveal. We now had enough context to set more specific OKRs.</p>
+          </section>
+    
+          <section className="okrs">
+            <h4>OKRs</h4>
+            <p><strong>Objective:</strong> Decrease the defect rate from 8% to 4%</p>
+            <ul>
+              <li>KPI: Defect rate from in-app times, from 23% to ~5%</li>
+              <li>Guardrail: Do not decrease the overall tracking automation rate.</li>
+            </ul>
+          </section>
+          <hr></hr>
+    
+          <section className="solution">
+            <h2>Solution</h2>
+            <p>I prioritized these high-impact changes that would be most addressable with the limited engineering bandwidth (6-8 weeks):</p>
+            <ol>
+    <li><strong>Allow manual time selection for arrivals/departures</strong>, rather than using point-of-click. This lets drivers input actual times retrospectively.</li>
+    <li><strong>Restrict In-App check-ins to within 1 mile of the facility.</strong> This ensures on-site presence and prevents account misuse. We chose to show an error message rather than hide the feature to avoid confusion from delayed GPS pings.</li>
+    <li><strong>Remove GPS overwrite of In-App times</strong>. Despite controversy and resistance from operations managers and the original team responsible who had their own incentives, I pushed for this change based on the confidence of my data analysis and first-hand experience. As Keynes said, "It's not bringing in new ideas that's so hard. It's getting rid of the old ones."</li>
+  </ol>
+            <p>We also introduced an option to disable the OnTrip experience for B2B customers requesting GPS-only tracking. These changes aimed to significantly improve accuracy within our tight timeframe, balancing user needs with technical constraints. We thoroughly discussed implementation details, including time restrictions (no future times allowed), 15-minute increments for time selection, and default timezones. I also led extensive talks on potential fraud risks and strategies to mitigate our exposure.</p>
+            <img src={three_3} alt="Solution implementation" className="case-study-image framed-image" />
+          </section>
+    
+          <section className="rollout">
+            <h4>Rollout</h4>
+            <p>Our rollout approach was guided by data science principles established: We opted for a pre/post launch analysis instead of an experiment (XP) as it would provide sufficient signal more quickly. We were confident in the outcome with minimal downside risk. To further mitigate risk, we used a phased rollout: we started with 10% of the carrier base, and gradually increased the roll-out to 100% over a week. The intuitive nature of the changes meant no written communication to drivers was necessary.</p>
+            <p>For ongoing analysis, in addition to our OKRs we monitored:</p>
+            <ul>
+              <li>Rate of In-App check-in usage</li>
+              <li>Frequency of error messages</li>
+              <li>Driver locations at form submission</li>
+            </ul>
+            <p>During the roll-out, I shared my findings on driver adaptation to the team slack channel in real-time.</p>
+          </section>
+          <hr></hr>
+          <section className="outcome">
+            <h2>Outcome</h2>
+            <p>Overall, we hit our goals.</p>
+            <ul>
+              <li>Overall defect rate went from 8% to 3.5%.
+                <ul>
+                  <li>Our efforts exceeded expectations, as they not only improved our target area but also reduced defects in GPS data.</li>
+                </ul>
+              </li>
+              <li>The defect rate for in-app times went from 23% to ~7%.
+                <ul>
+                  <li>This initially missed the target, but performance improved as drivers got used to the new date-time selector.</li>
+                </ul>
+              </li>
+              <li>There was no negative impact to the overall tracking automation rate.</li>
+            </ul>
+    
+            <h4>Adjustments</h4>
+            <p>By monitoring error rates and calling affected drivers, I discovered that "too far from facility" errors occurred even when drivers were nearby. I responded by expanding the acceptable radius for In-app times from 1 to 3 miles.</p>
+    
+            <h4>Future Enhancements</h4>
+            <p>I documented a roadmap for future improvements, despite my temporary assignment. This included:</p>
+            <ul>
+              <li>Preventing bad data: Further strategies discourage account sharing or separate location data for shared accounts.</li>
+              <li>Empower drivers: Add features allowing status reversal and updates, addressing incorrect progress marking.</li>
+              <li>Improve facility location data: Use driver check-in behavior to refine our facility location database.</li>
+            </ul>
+          </section>
+          <hr></hr>
+    
+          <section className="feedback">
+            <h2>Collaboration feedback</h2>
+            <blockquote>
+              <p>"Jason is extremely hands-on in the best ways possible. When writing the PRD, he was in the app himself, going through the check-in workflows... He grabs screenshots so that any reader of the PRD can understand the current workflow. He does an excellent job at getting stakeholder alignment. He would provide detailed context with pros and cons and tag all stakeholders in order to discuss and get alignment…Jason was able to discover a big, unrelated, issue with Smart Waypoints. This was something Jason caught because he's willing to go in the weeds to ensure his product is functioning correctly."</p>
+              <footer>- Julie, Product Operations manager</footer>
+            </blockquote>
+            <blockquote>
+              <p>"Jason has been a great help to the eng team by clarifying the requirements and finding the right resource to unblock when needed. Jason has shown harmonious and cooperative spirit by bringing the design/ops/eng/DS team together from the beginning of the project… He was very open to eng feedback and made the user experience smooth. In the middle of the project implementation, the team found that the dispatcher was not able to check-in on trip flow. As soon as he got this attention, he was open to adding this change in the project and extending the timeline, so users get a better experience. I was really very impressed with his data understanding skills. DS was OOO during project rollout, but Jason did all the analytics by himself and shared earlier results. He also helps to debug the user behavior when the on-call team raises the alerts. Overall, it was a great experience working with Jason."</p>
+              <footer>- Hetal, Senior Software Engineer</footer>
+            </blockquote>
+          </section>
+          <hr></hr>
+          <section className="learnings">
+            <h2>Personal Learnings</h2>
+            <p>This experience reinforced key principles of effective product management in complex, data-rich environments. As Daniel Kahneman said, "simple models and sparse data can be surprisingly effective in a noisy world." The main learnings include:</p>
+            <ul>
+              <li>The power of combining multiple discovery methods, especially direct user engagement, to see beyond the data.</li>
+              <li>The value of simplifying complex rule sets (e.g., removing GPS data overwrites of InApp times) to improve both accuracy and maintainability.</li>
+              <li>The utility of simple proxies (like the 15-minute dwell time "defect rate") for making high-signal progress in complex environments</li>
+            </ul>
+          </section>
+        </>
+      ),
+    },
+
+
+    {
       id: 1,
       logo: uber_logo,
       title: "Empowering Uber Freight's Operators",
       subtitle: "Product Discovery • Codesign • Iterative Development",
       timeline:  "Timeline: Sept 2021 - Nov 2022",
-      description: "I led product development to empower our Uber Freight operations team to deliver high-quality service. This work included product discovery, codesigning the solution with industry experts, and iterative development. Today, the solution is used everyday by 1,500 people to move over $1B in freight in North America.",
+      description: "I led product development to empower our Uber Freight operations team to deliver high-quality service. Today, the solution is used everyday by 1,500 people to move over $1B in freight in North America.",
       image: one_cover,
       content: (
         <>
@@ -315,7 +472,7 @@ const Projects = () => {
 
   return (
     <div className="projects">
-      <h2>Featured Projects</h2>
+      <div className="projects-header">Featured Projects</div>
       {projects.map(project => (
         <div key={project.id} className="project-card">
           <img src={project.image} alt={project.title} className="project-image framed-image" />
@@ -342,23 +499,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-// `
-//       <section>
-//             <h4>The Challenge</h4>
-//             <p>Uber Freight's growth and profitability were negatively impacted as the company faced challenges maintaining high-quality service to customers under rapid expansion. Despite efforts to automate shipments, manual operations remained critical. The 1,000+ person team lacked proper tools, relying on makeshift solutions like Google Sheets, which hindered effectiveness.</p>
-//           </section>
-
-//           <section>
-//             <h4>My Role</h4>
-//             <p>I led this project as Product Manager from funding to launch. I was supported by a team of 7, composed of a Designer, a User Researcher, 4 Developers, and a Product Operations Manager.</p>
-//           </section>
-
-//           <section>
-//             <h2>Discovery</h2>
-//             <h4> Surveys</h4>
-//             <p>As Product Operations Manager prior to becoming Product Manager, I surveyed the operations team pre-kickoff. Results consistently showed a preference for the old 'freight-ops' or 'loadboard' tool, primarily due to its superior information organization.</p>
-//             <img src={faceColorImage} alt={'image of surveys'} className="project-image" />
-            
-//           </section>
-//       `
