@@ -5,6 +5,7 @@ import Landing from './components/Landing';
 import Work from './components/Work';
 import About from './components/About';
 import Testimonials from './components/Testimonials';
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   const workRef = useRef(null);
