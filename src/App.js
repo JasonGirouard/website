@@ -18,6 +18,7 @@ const App = () => {
   };
 
   return (
+    <>
     <div className="app">
       <Navigation 
         onWorkClick={() => scrollTo(workRef)}
@@ -35,6 +36,8 @@ const App = () => {
         
       </div>
     </div>
+    <Analytics />
+    </>
   );
 };
 
